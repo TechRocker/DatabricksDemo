@@ -37,4 +37,5 @@ jobs:
         run: cd $GITHUB_WORKSPACE/tutorial
 
       - name: run Spider
-        run: scrapy crawl quotes
+        # run: scrapy crawl quotes
+        run: ls
