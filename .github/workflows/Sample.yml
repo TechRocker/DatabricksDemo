@@ -44,5 +44,10 @@ jobs:
         # run: scrapy crawl quotes
         # run: ls
       # - name: run Spider
-        run: scrapy crawl quotes
+        run: |
+          python3 -m pip install pip --upgrade\
+          pip install pyopenssl --upgrade\
+          scrapy crawl quotes
+
+
         
