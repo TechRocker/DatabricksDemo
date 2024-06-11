@@ -36,6 +36,12 @@ jobs:
       - name: go to Dir
         run: cd $GITHUB_WORKSPACE/tutorial
 
+      - name: go to Dir
+        run: cd tutorial
+
       - name: run Spider
         # run: scrapy crawl quotes
         run: ls
+      - name: run Spider
+        run: scrapy crawl quotes
+        
