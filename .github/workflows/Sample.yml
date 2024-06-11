@@ -39,15 +39,13 @@ jobs:
       # - name: go to Dir
       #   run: cd /home/runner/work/DatabricksDemo/DatabricksDemo/tutorial/
 
+      - name: run Spider       
+        run: python3 -m pip install pip --upgrade
+
+      - name: run Spider       
+        run: pip install pyopenssl --upgrade
+         
       - name: run Spider
         working-directory: ./tutorial
-        # run: scrapy crawl quotes
-        # run: ls
-      # - name: run Spider
-        run: |
-          python3 -m pip install pip --upgrade\
-          pip install pyopenssl --upgrade\
-          scrapy crawl quotes
-
-
+        run: scrapy crawl quotes
         
