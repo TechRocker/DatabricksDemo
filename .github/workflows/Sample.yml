@@ -40,6 +40,7 @@ jobs:
         run: cd /home/runner/work/DatabricksDemo/DatabricksDemo/tutorial/
 
       - name: run Spider
+        working-directory: ./tutorial
         # run: scrapy crawl quotes
         run: ls
       # - name: run Spider
