@@ -3,10 +3,10 @@
 name: CI
 
 # Controls when the workflow will run
-# on:
+on:
 #   # Triggers the workflow on push or pull request events but only for the "main" branch
-#   push:
-#     branches: [ "main" ] 
+  push:
+    branches: [ "main" ] 
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,3 +32,9 @@ jobs:
 
       - name: Install Scrapy
         run: pip install scrapy
+
+      - name: go to Dir
+        run: cd $GITHUB_WORKSPACE/tutorial
+
+      - name: run Spider
+        run: scrapy crawl quotes
